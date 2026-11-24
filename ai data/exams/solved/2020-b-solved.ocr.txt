@@ -1,0 +1,114 @@
+Solutions to Moed.B, Hedva.3.EE, 27.02.2020
+
+1. The domain can be presented in the form {(x — 1)? + (y+ 1)? > 2}.
+
+Solution 1. The function f(x,y) = |xy| satisfies: f(a,y) = f(—2,y) = 1) ‏(ע-‎ = f(—a,—y). Therefore, while
+searching for the critical points in the interior points, we can assume x > 0 and y > 0. The only critical point of ay is
+(0,0). Note that it lies on the boundary of the ball. To this we must add also the points where f is non-differentiable,
+these are all the points satisfying xy = 0. At all such points f vanishes.
+
+When looking for the critical points of f on the boundary of the ball, we again use f(x,y) = f(—a,y) = f(a,—-y) =
+f(—a,—-y). Therefore it is enough to check the critical points of xy on the circle (x — 1)? + (y +1)? = 2, and also to check
+the points where the function might have the differentiability problem, i.e. || = 0. The critical points of xy on the circle
+(x—1)? + (y+1)? = 2 are obtained in the standard way. (e.g. by the condition grad(xy) ~ grad((a—1)? + (y+1)? —2).)
+One gets the condition (y - ₪ + ‏ע)(1‎ + ₪( = 0. Together with (a — 1)? + (y+ 1)? = 2 one gets:
+
+e Either ‏ש‎ = —y = 0, with f(0,0) = 0;
+
+‎with f(—2,2) = 4‏ ,2 =2ת0.
+
+‎* Ory+1=2, with «= 13 Here: C54, =1tv3) =|) = 2.
+
+‎Thus the minimal value of f is 0, while the maximal is 4.
+
+‎Solution 2. As f(x,y) = |xy|, one has: f > 0. Thus the minimal value of f is 0 and it is obtained at the set of
+points where xy = 0. To find the maximal value of f one can pass to the polar coordinates, then the expression for f is:
+20)! Note that |sin(2@)| > 1 and attains 1 for 0 = - +. In addition, by drawing the circle ))₪ - 1(? +(y+1)? = 2},
+one gets: the maximal value of r is 2/2 and is attained for 0 = —{. Altogether we get: f(x,y) > 4 and this value is
+achieved at the point (2,—2).
+
+‎2. A counterexample: f(a,y,z) = ₪ + / + 2.
+More generally, if |]
+
+‎Oz
+
+‎8 the assumptions then by the implicit function theorem we have: =
+
+‎Oy F? Oy
+dx _ _ =f 4 Oy dz, Ox _ - at satisfies 5s song gives A ,
+oe = ‏-דה-‎ Thus 58-95: ‏7-ל‎ Therefore any f that satisfies the assumptions gives a counterexample.
+
+‎3. We pass from the triple integral to the repeated integral, projecting onto the yz-plane. The projection is the domain
+bounded by two ellipses. Thus we have:
+
+‎J1-4y? 927
+In(2 — 4y? — 92?)
+
+‎If oo dadydz = / ( | : | 062 = 9 dydz
+4 )55402+922>1( 0 {$<4y?+922<1}
+1
+I 2 _ 52 =p? 2 2
+> nf In? = = *) gags = on | r-dr SE = In(2 —t)dt = =
+{ESP+22<1} {deSrs} 2
+
+‎4. By the assumptions the surface S is smooth at each point, and its normal is V(f). Therefore:
+
+‏מ ‎[fo pias = [fou‏ מא
+‎Ss‏ 5
+
+‎₪ smooth. Therefore ]] ||V(f)||-dS > 0.
+8
+
+‎Here ||V(f)|| is a continuous positive function on S. The area of ,5 is positive, as
+
+‎5. By the direct check, the field F= wa) i is locally conservative. Therefore JE dG+ ] ₪ dG, + ] ₪ 60+ ] F. 06% = =0,
+C1 C2 Cs
+
+‎where: C, = {a =0, y 6 ]- 1/100, —r]}, C2 = {x =0, y 6 [r, 0 0 C3 = )₪2 +y? =r?, ₪ <0}.
+(Note that the curves 0 68,090 bound a simply connected region.)
+Note that F|,-9 = “22. Therefore J 7.06 =0= 1 0%
+
+‎Then Je dG = - ] 0 Ci is oriented clockwise. We get:
+6
+
+‎6 [ew]
+
+‎6. Solution 1. Think of the curve C as the (oriented) boundary of the surface $ = {a?+y?+2? > 1, +2 = --1[. This surface
+is a disc. The (prescribed) orientation of the curve determines the direction of the normal to the disc: N = (0,1,1). The
+
+‎- (=r: sin(@),7r - 00800((00 = ‏-ח-‎
+
+field has continuous partial derivatives on S', therefore we can use Stokes theorem. Note that rot(F ( = (1,1,1) thus we
+
+have: 11)
+fF df= [for dS = [for | aff -dS = V2. (area of S).
+
+The area of 2 can be computed i in various ways. For example, its diameter i is the distance between the points (0,0,—1),
+(0, —1,0), hence the radius equals % Altogether we get:
+2 1
+1
+6
+
+‎in(t)—1 1‏
+-("7-27ה: ערה
+
+‎Solution 2. We use the following parametrization of the curve: 7(¢) = (x(t), y(t), z(t)) = ( -
+
+‎Note that f(t) = )-- 556 5549 -55( and F((t)) = (—sin(t) 1, 92, S050 + sinlW=1)
+
+‎va 2
+Therefore the scalar product of these two vectors is: F((t)) - y'(t) = eto + aud - sin(#) costs) + costt)
+
+‎Qn
+‎Substitute this into the integral: f ‏בור‎ ch F(9(t))-7/(t) dt =
+
+‎sin(2t)
+‎2
+
+‎The integral over sin(t) vanishes, ‘ond so do ‘the integrals over cos(t) and sin(¢) cos(t) = . We're finally left with
+
+‎Qn 2 Qn
+2 sin” (t) 1 ₪
+FedF=...= dt = — 1 — cos(2t) dt = /
+f bo V2 WI I-0 Oa
+

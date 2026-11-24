@@ -1,0 +1,238 @@
+Solutions to Moed.A, Hedva.3.EE, 06.02.2020
+1. (This question is the same as q.4.h from homework 1.)
+Given a plane {a · x = 1} ⊂ Rn and a point x0 ∈ Rn , consider the line {x0 + t · a| t ∈ R}. This line is orthogonal to
+1−x ·a
+the plane. It intersects the plane at the moment of time t0 satisfying (x0 + t0 · a)a = 1. Thus t0 = ||a||02 . Thus the point
+1−x ·a
+
+symmetric to x0 with respect to this plane is x0 + 2t0 · a = x0 + 2a ||a||02 .
+2. Counter-examples: U = {(x, y, z)| 1 < x2 + y 2 < 2} ⊂ R3 or R3 \ {ẑ − axis}.
+In both cases U is open, unbounded, path-connected, not simply connected.
+v )−f (x)
+.
+3. (a) ∂⃗v f := lim f (x+t⃗
+t||⃗
+v ||
+t→0
+
+The answer ∂⃗v f := lim f (x+t⃗vt)−f (x) was also accepted.
+
+t→0
+r·cos2 (ϕ)
+cos(2ϕ)
+limr→0 r4 +cos4 (ϕ) · e
+= 0.
+
+(b) For each fixed ϕ we have:
+Therefore, if we want to have directional derivatives, we
+must extend the function to the origin by 0. Thus we extend f to (0, 0) by 0.
+Fix any direction R2 ∋ ⃗v ̸= 0 and the corresponding angle ϕ⃗v ∈ [0, 2π). We should check the existence of the limit
+||t · ⃗v || · cos2 (ϕ⃗v ) · ecos(2ϕ⃗v )
+|t| cos2 (ϕ⃗v ) · ecos(2ϕ⃗v )
+=
+lim
+·
+.
+t→0 (||t · ⃗
+v ||4 + cos4 (ϕ⃗v )) · t · ||⃗v || t→0 t ||t · ⃗v ||4 + cos4 (ϕ⃗v )
+lim
+
+If cos(ϕ⃗v ) = 0 then the limit is zero. Otherwise the limit does not exist, as the limits for t → 0± are distinct.
+4. (a) (This is question 5.d from homework.3)
+The functions f1 , f2 are continuous therefore the subsets S1 , S2 ⊂ R3 are closed. As S1 , S2 are also bounded these
+sets are compact. Therefore the (continuous) function d(s1 , s2 ) on S1 × S2 attains its minimum. Hence the distance
+d(S1 , S2 ) is realized for some points of S1 , S2 .
+(b) Suppose s1 , s2 are the points realizing the minimum of the distance. Then the function h(x) = ||x − s2 ||2 has the
+(absolute) minimum at the point x = s1 , under the restriction f1 (x) = 0. Thus, by Lagrange’s theorem, at this point
+holds:
+)
+(
+2(s1 − s2 ) = gradx ||x − s2 ||2 |s1 ∼ grad(f1 )|s1 .
+As we have seen, grad(f1 )|s1 is the normal vector to the surface S1 at the point s1 . Thus the vector s1 − s2 is
+orthogonal to S1 at the point s1 . Similarly it is orthogonal to S2 at the point s2 .
+5. (This is based on question 1.c from homework 7.)
+To identify/classify the critical point we need only the first/second derivatives. Therefore (as in homeworks) we
+take Taylor’s expansion of f (x, y, z) up to order 2. We get: f (x, y, z) = xy+yz+xz
++ O(x3 , x2 y, xy 2 , y 3 ). Therefore
+2
+grad(f )|(0,0,0) = 0, i.e. the origin is indeed a critical point, and it is enough to classify the critical point of xy+yz+xz
+.
+2
+This can be done in many ways e.g.:
+• Restrict to the lines {y = x, z = 0} and {y = −x, z = 0}:
+x2
+– f (x, x, 0) = 3−sin(x)−cos(x)
+≥ 0. This vanishes at x = 0 and is positive otherwise. Thus x = 0 is a minimum.
+−x
+– f (x, −x, 0) = 3−sin(x)−cos(x)
+≤ 0. This vanishes at x = 0 and is negative otherwise. Thus x = 0 is a maximum.
+Thus (0, 0, 0) is a saddle point.
+
+
+0 1 1
+• The Hessian matrix is ∂ 2 f |(0,0,0) = 21 1 0 1. To check whether this is positive/negative definite we can use
+1 1 0 [
+]
+0 1
+Sylverster’s criterion. The first 2 × 2 minor is det
+= −1. Thus ∂ 2 f |(0,0,0) is not positive definite. Similarly,
+1 0
+(−∂ 2 f |(0,0,0) ) is not positive definite.
+Therefore ∂ 2 f |(0,0,0) is neither positive nor negative definite. Thus (0, 0, 0) is a saddle point.
+2
+
+6. (This is based on q.3.v from homework 11.)
+The condition y2 ≤ z ≤ y implies y ≥ 0, thus |y| = y. We pass to the iterated integral, and then to polar coordinates:
+∫1 (
+
+∫∫
+
+x2
+
+)
+
+∫1 (
+
+∫1
+) 2
+1
+|x| x2
+1
+x
+r cos(ϕ)drdϕ e dx = ( √ − sin(arctan( ))
+e dx =
+2
+3
+2
+
+∫∫
+
+2
+
+ye dydz dx =
+−1
+
+−1
+
+2
+
+0≤y 2 +z 2 ≤x 3
+y
+2 ≤z≤y
+
+−1
+
+1
+
+0≤r≤|x| 3
+arctan( 12 )≤ϕ≤ π
+4
+
+( √12 − sin(arctan( 12 )) ∫
+
+1
+
+=2
+
+3
+
+2
+
+xex dx =
+
+( √12 − sin(arctan( 12 ))
+3
+
+· (e1 − 1).
+
+0
+2
+tan2
+1
+√1 .
+One can also compute sin(arctan( 21 )), e.g., sin2 = sinsin
+2 +cos2 = tan2 +1 , thus sin(arctan( 2 )) =
+5
+
+7. (This is based on question 5 from homework 14.)
+(a) By the direct check: ∂x Fy = ∂y Fx . Therefore the field is locally conservative in R2 \ (0, 0).
+
+2
+
+(b) To check that the field is globally conservative we should check:
+
+H
+
+⃗ = 0 for any loop in R2 \ (0, 0). As was shown
+F⃗ dC
+
+⃗
+C
+
+in homework 14, it is enough to check the vanishing of just one integral, for C = {x2 + y 2 = R2 } ⊂ R2 . This follows
+also from Green’s theorem. We check the vanishing:
+x=R·cos(ϕ) ∫2π
+I
+(y 2 − x2 )dx − 2xydy y=R·sin(ϕ)
+−sin3 (ϕ) − cos2 (ϕ)sin(ϕ)
+=
+dϕ = 0.
+2
+2
+2
+(x + y )
+R
+0
+
+x2 +y 2 =R2
+
+Therefore the field is globally conservative in R \ (0, 0).
+∫
+∫
+Another solution: Once we check that ∂x Fy = ∂y Fx , we can try to find the potential. By integrating Fx dx, Fy dy
+x
+one readily sees that F⃗ = grad(ϕ) for ϕ(x, y) = x2 +y
+2 . Note that ϕ is well defined (and infinitely diﬀerentiable) on the
+2
+whole R \ {0, 0}. Thus F⃗ is conservative.
+2
+
+8. The surface is closed and the field is continuously diﬀerentiable in the whole R3 . We use the Gauß theorem (note the
+minus sign due to the inner normal):
+∫∫
+
+∫∫∫
+⃗=−
+F⃗ dS
+
+⃗
+S
+
+2
+2
+x2
++ yb2 + zc2 ≤1
+a2
+
+∫∫∫
+
+x=ax̃
+y=bỹ
+
+div F⃗ · dxdydz z=cz̃
+= −abc
+
+∫∫∫
+(4x3 + 8y 7 + 1)dx̃dỹdz̃ = −abc
+
+x̃2 +ỹ 2 +z̃ 2 ≤1
+
+x̃2 +ỹ 2 +z̃ 2 ≤1
+
+1dx̃dỹdz̃ = −
+
+4π
+abc.
+3
+
+

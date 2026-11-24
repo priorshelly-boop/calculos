@@ -1,0 +1,412 @@
+Solutions to Moed.C, Hedva.3.EE, 16.07.2020
+
+1. As ⃗v · (⃗u × w)
+⃗ ̸= 0 the vectors ⃗v , ⃗u, w
+⃗ are linearly independent (do not lie in one plane). Therefore their
+end-points are the vertices of a triangle, while ||⃗v − ⃗u||, ||⃗v − w||,
+⃗ ||⃗u − w||
+⃗ are the lengths of the sides of this
+triangle.
+This triangle is non-degenerate, i.e. the vertices do no lie on one line. Therefore none of ||⃗v − ⃗u||, ||⃗v − w||,
+⃗
+||⃗u − w||
+⃗ is the sum of two others.
+
+2. The function f (x, y, z) is periodic in z, with the period 2π. Therefore instead of considering the unbounded
+set ∂U ⊂ R3 we can restrict to ∂U ∩ {0 ≤ z ≤ 2π} ⊂ R3 . This set is closed and bounded, thus compact.
+Therefore f attains its minimum/maximum on ∂U ∩ {0 ≤ z ≤ 2π}, and hence on ∂U as well.
+As f (x, y, z) = g(x, y)+sin(z), the minimum of f occurs when z ∈ − π2 +2πZ and g(x, y) has the minimum.
+The maximum occurs when z ∈ π2 + 2πZ and g(x, y) has the maximum. Therefore the question is reduced
+2
+
+2
+
+2
+
+2
+
+to min/max of g(x, y) = x2 + y 2 on the boundary of the subset { xa2 + yb2 < 1, xb2 + ay2 < 1} ⊂ R2 . This is
+the intersection of two ellipses, the boundary consists of the four arcs.
+2
+2
+2
+2
+• Suppose the arc is a part of xa2 + yb2 = 1. Then g on this arc is: x2 + b2 (1 − xa2 ) = b2 − x2 ( ab 2 − 1). As
+2
+2
+b > a the minimum of this expression is achieved at x = a , while the maximum at x = 0.
+2
+2
+Note that the points (0, ±b) do not satisfy the condition xb2 + ay2 < 1. The points (±a, 0) do satisfy it,
+and g(±a, 0) = a2 .
+2
+2
+2
+2
+• Suppose the arc is a part of xb2 + ay2 = 1. Then g on this arc is: x2 + a2 (1 − xb2 ) = a2 + x2 (1 − ab2 ). As
+b > a the minimum of this expression is achieved at x2 = 0, while the maximum at x2 = b2 .
+2
+2
+Note that the points (±b, 0) do not satisfy the condition xa2 + yb2 < 1. The points (0, ±a) do satisfy it,
+and g(0, ±a) = a2 .
+2
+2
+2
+2
+• It remains to check the intersection points of the two ellipses: xa2 + yb2 = 1 = xb2 + ay2 . These satisfy
+2 2
+b
+2a2 b2
+x2 = y 2 = aa2 +b
+2 , and g(∗, ∗) = a2 +b2 .
+3. The surface is naturally parameterized by x, y. These parameters vary in the region {x2 + y 2 + 2y ≤ 2020} ⊂
+R2 , which is a shifted disc: {x2 + (y + 1)2 ≤ 2021} ⊂ R2 . Therefore, for any function h holds:
+¨
+
+√
+
+¨
+h · dS =
+
+h·
+
+1+(
+
+∂z 2
+∂z
+) + ( )2 dxdy =
+∂x
+∂y
+
+¨
+
+√
+h 2dxdy.
+
+Thus
+¨
+Area =
+
+¨
+1dS =
+
+) √
+√
+√ (
+√
+√
+2 · dxdy = 2 · area of the disc of radius 2021 = 2 · π · ( 2021)2 .
+
+{x2 +y 2 +2y≤2020}
+
+S
+
+4. See question 3 of Moed.B, 2020.02.27.
+
+5. The integration path bounds the disc, denote it D. We apply Stokes theorem:
+
+¸
+C
+
+F⃗ · d⃗r =
+
+˜
+
+⃗
+(1, −1, 1) · dS.
+
+D
+
+√
+By the assumption on the direction of the path, the (unit) normal to the disc is: (0,1,−1)
+. Therefore:
+2
+
+˛
+
+√
+F⃗ · d⃗r = − 2 · (the area of D).
+
+C
+
+The diameter of D is obtained
+as the distance between the points (0, 0, 0) and (0, 1, 1), which is
+√
+¸
+⃗
+√
+Therefore F · d⃗r = − 2π( 12 )2 .
+
+√
+2.
+
+C
+
+6. Note that div(
+
+(x,y,z)
+3
+
+(x2 +y 2 +z 2 ) 2
+
+) = 0. Therefore we can use Gauss theorem to replace the surface by a simpler
+
+one, as far as the field remains diﬀerentiable in the whole body of integration.
+
+2
+
+˜
+
+Solution 1. First we note:
+
+⃗
+(x,y,z)·dS
+
+|x| +|y| +|z| =1
+z≥0
+3
+
+3
+
+3
+
+3
+(x2 +y 2 +z 2 ) 2
+
+˜
+
+=
+
+⃗
+(x,y,z)·dS
+3
+
+|x| +|y| +|z| =1
+z≤0
+3
+
+3
+
+3
+
+(x2 +y 2 +z 2 ) 2
+
+, as both the field and
+
+the normal are anti-symmetric under (x, y, z) ↔ (−x, −y, −z). Therefore
+¨
+‹
+(x, y, z)
+1
+(x, y, z)
+⃗
+⃗
+·
+d
+S
+=
+3
+3 · dS.
+2
+2
+2
+2
+2
+(x + y + z ) 2
+(x + y 2 + z 2 ) 2
+|x|3 +|y|3 +|z|3 =1
+
+|x|3 +|y|3 +|z|3 =1
+z≥0
+
+To compute this later integral we would like to use Gauss theorem, but the field is not diﬀerentiable at
+(0, 0, 0). Thus we use Gauss theorem for the body: {|x|3 + |y|3 + |z|3 ≤ 1, x2 + y 2 + z 2 ≥ ϵ2 }. Here 0 < ϵ < 1
+is a (small) constant. As div( 2 (x,y,z)
+3 ) = 0 we have:
+(x +y 2 +z 2 ) 2
+‹
+‹
+(x, y, z)
+1
+(x, y, z)
+1
+⃗
+⃗
+with the inner normal.
+3 · dS = −
+3 · dS,
+2
+2
+2
+2
+2
+2
+(x + y + z ) 2
+(x + y 2 + z 2 ) 2
+|x|3 +|y|3 +|z|3 =1
+
+x2 +y 2 +z 2 =ϵ2
+
+For the later integral we note that x2 + y 2 + z 2 ≡ ϵ2 along the surface, thus
+‹
+‹
+1
+(x, y, z)
+1
+(x, y, z) ⃗ Gauss 1
+⃗
+−
+·
+d
+S
+=
+−
+· dS ==
+3
+2
+2
+ϵ3
+2ϵ3
+(x2 + y 2 + z 2 ) 2
+x2 +y 2 +z 2 =ϵ2
+
+x2 +y 2 +z 2 =ϵ2
+
+˚
+3dV =
+
+4π
+.
+2
+
+x2 +y 2 +z 2 ≤ϵ2
+
+Solution 2. We would like to replace the initial surface by the planar domain {|x|3 + |y|3 ≤ 1, z = 0}.
+But this domain contains the point (0, 0, 0), where the field is not diﬀerentiable. Thus we replace the initial
+surface by the union:
+{ |x|3 + |y|3 ≤ 1, z = 0 }
+∪ {x2 + y 2 + z 2 = ϵ2 , z ≥ 0} .
+x2 + y 2 ≥ ϵ2
+|
+{z
+}
+|
+{z
+}
+S2
+S1
+
+As div(
+
+(x,y,z)
+3
+
+(x2 +y 2 +z 2 ) 2
+
+) = 0 we have by Gauss theorem:
+
+¨
+
+⃗
+(x, y, z) · dS
+
+|x| +|y| +|z| =1
+z≥0
+3
+
+3
+
+3
+
+3
+(x2 + y 2 + z 2 ) 2
+
+¨
++
+S1
+
+⃗
+(x, y, z) · dS
+3
+(x2 + y 2 + z 2 ) 2
+
+¨
++
+
+⃗
+(x, y, z) · dS
+3
+
+S2
+
+(x2 + y 2 + z 2 ) 2
+
+= 0.
+
+In the later two integrals the normals are taken downstairs.
+⃗ = −zdS = 0, as
+The normal to S1 is (0, 0, −1), therefore for the integral over S1 we have: (x, y, z) · dS
+z = 0. Thus
+¨
+¨
+⃗
+⃗
+(x, y, z) · dS
+(x, y, z) · dS
+with the normal upstairs.
+3 =
+3 ,
+2
+2
+2
+2
+2
+2
+(x + y + z ) 2
+(x + y + z ) 2
+|x|3 +|y|3 +|z|3 =1
+z≥0
+
+S2
+
+The later integral is computed in various ways, e.g.
+¨
+¨
+¨
+¨
+⃗
+⃗r · ⃗rr dS
+(x, y, z) · dS
+dS
+1
+area of S2
+1
+=
+=
+=
+dS =
+= 2 2πϵ2 .
+3
+3
+2
+2
+2
+2
+2
+2
+r
+r
+ϵ
+ϵ
+ϵ
+2
+(x + y + z )
+S2
+
+S2
+
+S2
+
+S2
+
+

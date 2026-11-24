@@ -1,0 +1,313 @@
+Solutions to Moed.B, Hedva.3.EE, 27.02.2020
+1. The domain can be presented in the form {(x − 1)2 + (y + 1)2 ≤ 2}.
+Solution 1. The function f (x, y) = |xy| satisfies: f (x, y) = f (−x, y) = f (x, −y) = f (−x, −y). Therefore, while
+searching for the critical points in the interior points, we can assume x ≥ 0 and y ≥ 0. The only critical point of xy is
+(0, 0). Note that it lies on the boundary of the ball. To this we must add also the points where f is non-diﬀerentiable,
+these are all the points satisfying xy = 0. At all such points f vanishes.
+When looking for the critical points of f on the boundary of the ball, we again use f (x, y) = f (−x, y) = f (x, −y) =
+f (−x, −y). Therefore it is enough to check the critical points of xy on the circle (x − 1)2 + (y + 1)2 = 2, and also to check
+the points where the function might have the diﬀerentiability problem, i.e. |xy| = 0. The critical points of xy on the circle
+(x − 1)2 + (y + 1)2 = 2 are obtained in the standard way. (e.g. by the condition grad(xy) ∼ grad((x − 1)2 + (y + 1)2 − 2).)
+One gets the condition (y − x + 1)(y + x) = 0. Together with (x − 1)2 + (y + 1)2 = 2 one gets:
+• Either x = −y = 0, with f (0, 0) = 0;
+• Or x = −y = 2, with f (−2,√2) = 4;
+√
+√
+• Or y + 1 = x, with x = 1±2 3 . Here: f ( 1±2 3 , −1±2 3 ) = | −1−3
+2 | = 2.
+Thus the minimal value of f is 0, while the maximal is 4.
+Solution 2. As f (x, y) = |xy|, one has: f ≥ 0. Thus the minimal value of f is 0 and it is obtained at the set of
+points where xy = 0. To find the maximal value of f one can pass to the polar coordinates, then the expression for f is:
+r2 | sin(2ϕ)
+|. Note that |sin(2ϕ)| ≤ 1 and attains 1 for ϕ = − π4 . In addition, by drawing the circle {(x − 1)2 + (y + 1)2 = 2},
+2
+√
+one gets: the maximal value of r is 2 2 and is attained for ϕ = − π4 . Altogether we get: f (x, y) ≤ 4 and this value is
+achieved at the point (2, −2).
+
+2. A counterexample: f (x, y, z) = x + y + z.
+∂ f
+∂y
+∂z
+More generally, if f satisfies the assumptions then by the implicit function theorem we have: ∂x
+= − ∂∂xy ff , ∂y
+= − ∂yz f ,
+∂z f
+∂y ∂z ∂x
+∂x
+∂z = − ∂x f . Thus ∂x · ∂y · ∂z = −1. Therefore any f that satisfies the assumptions gives a counterexample.
+
+3. We pass from the triple integral to the repeated integral, projecting onto the yz-plane. The projection is the domain
+bounded by two ellipses. Thus we have:
+√
+1−4y 2 −9z 2
+∫∫∫
+∫∫
+∫
+∫∫
+ỹ=2y
+(
+)
+x
+x
+ln(2 − 4y 2 − 9z 2 )
+z̃=3z
+(1)
+dxdydz
+=
+dx
+dydz
+=
+dydz
+==
+1 + x2
+1 + x2
+2
+{ 12 ≤4y 2 +9z 2 ≤1}
+
+V
+
+∫∫
+=
+{ 12 ≤ỹ 2 +z̃ 2 ≤1}
+
+{ 12 ≤4y 2 +9z 2 ≤1}
+
+0
+
+ln(2 − ỹ 2 − z̃ 2 )
+dỹdz̃ = 2π
+2·2·3
+
+∫
+
+{ √12 ≤r≤1}
+
+ln(2 − r2 )
+t=r 2 2π
+r · dr ==
+2·2·3
+24
+
+∫1
+
+2π
+ln(2 − t)dt =
+24
+
+(
+
+3
+3
+1
+ln( ) +
+2
+2
+2
+
+)
+.
+
+1
+2
+
+4. By the assumptions the surface S is smooth at each point, and its normal is ∇(f ). Therefore:
+∫∫
+∫∫
+∫∫
+∇(f )
+⃗
+∇(f ) · dS =
+∇(f ) ·
+dS =
+||∇(f )|| · dS.
+||∇(f )||
+S
+
+S
+
+S
+
+Here ||∇(f )|| is a continuous positive function on S. The area of S is positive, as S is smooth. Therefore
+
+∫∫
+
+||∇(f )||·dS > 0.
+
+S
+
+∫
+∫
+∫
+∫
+⃗ + F⃗ ·dC
+⃗ 1 + F⃗ ·dC
+⃗ 2 + F⃗ ·dC
+⃗ 3 = 0,
+F⃗ ·dC
+5. By the direct check, the field F⃗ = (y,−x)
+x2 +y 2 is locally conservative. Therefore
+C
+C1
+C2
+C3
+√
+√
+where: C1 = {x = 0, y ∈ [− 10 100, −r]},
+C2 = {x = 0, y ∈ [r, 10 100]},
+C3 = {x2 + y 2 = r2 , x ≤ 0}.
+(Note that the curves C, C1 , C2 , C3 bound a simply connected region.)
+∫
+∫
+⃗ 1 = 0 = F⃗ · dC
+⃗ 2.
+F⃗ · dC
+Note that F⃗ |x=0 = (y,0)
+y 2 . Therefore
+C1
+C2
+∫
+∫
+⃗ = − F⃗ · dC
+⃗ 3 , here C3 is oriented clockwise. We get:
+Then F⃗ · dC
+C
+
+C3
+
+∫
+
+∫
+⃗ =−
+F⃗ · dC
+
+C
+
+C3
+
+3π
+
+(y, −x)
+⃗3 =
+· dC
+x2 + y 2
+
+∫2
+
+(r · sin(ϕ), −r · cos(ϕ))
+· (−r · sin(ϕ), r · cos(ϕ))dϕ = −π.
+r2
+
+π
+2
+
+6. Solution 1. Think of the curve C as the (oriented) boundary of the surface S = {x2 +y 2 +z 2 ≤ 1, y+z = −1}. This surface
+is a disc. The (prescribed) orientation of the curve determines the direction of the normal to the disc: N = (0, 1, 1). The
+
+2
+
+field has continuous partial derivatives on S, therefore we can use Stokes theorem. Note that rot(F⃗ ) = (1, 1, 1) thus we
+have:
+I
+∫∫
+∫∫
+√ (
+√ ∫∫
+)
+(0, 1, 1)
+⃗
+⃗
+1 · dS = 2 · area of S .
+dS = 2
+F · d⃗r =
+(1, 1, 1) · dS =
+(1, 1, 1) ·
+|(0, 1, 1)|
+C
+
+S
+
+S
+
+S
+
+The area of S can be computed in various ways. For example, its diameter is the distance between the points (0, 0, −1),
+(0, −1, 0), hence the radius equals √12 . Altogether we get:
+I
+√
+1
+F⃗ · d⃗r = 2 · π · .
+2
+C
+(
+)
+sin(t)−1
+sin(t)+1
+√ ,
+Solution 2. We use the following parametrization of the curve: γ(t) = (x(t), y(t), z(t)) = cos(t)
+,
+−
+.
+2
+2
+2
+(
+)
+(
+)
+cos(t)
+cos(t)
+cos(t)
+√ ,
+√ , √
+Note that γ ′ (t) = − sin(t)
+and F (γ(t)) = − sin(t) − 1, cos(t)
++ sin(t)−1
+.
+2 ,− 2
+2
+2
+2
+2
+2
+
+√
+Therefore the scalar product of these two vectors is: F (γ(t)) · γ ′ (t) = sin√2(t) + sin(t)
+− sin(t)4cos(t) + cos(t)
+4 .
+2
+2π
+H
+∫
+Substitute this into the integral: F⃗ · d⃗r =
+F (γ(t)) · γ ′ (t) dt = . . ..
+C
+
+t=0
+
+The integral over sin(t) vanishes, and so do the integrals over cos(t) and sin(t) cos(t) = sin(2t)
+. We’re finally left with
+2
+I
+
+∫ 2π
+F⃗ · d⃗r = . . . =
+
+C
+
+sin2 (t)
+1
+√
+dt = √
+2
+2 2
+t=0
+
+∫ 2π
+
+π
+1 − cos(2t) dt = √ .
+2
+t=0
+
+

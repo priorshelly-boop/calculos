@@ -1,0 +1,118 @@
+Solutions to Moed.A, Hedva.3.EE, 06.02.2020
+
+1. (This question is the same as q.4.h from homework 1.)
+Given a plane {a 1} ₪ R® and a point x, 6 R”, consider the line {xp + t- al t 6 R}. This
+the plane. It intersects the plane at the moment of time to satisfying (a +tp-a)a = 1. Thus tp = Tat Thus the point
+
+₪0 + 280 = 6 = 40 + 20
+
+line is orthogonal to
+
+symmetric to 29 with respect to this plane is
+
+2. Counter-examples: U = {(x,y, z)| 1 > ₪2 + y? > 2} ₪ R® or R® \ {2 — axis}.
+In both cases Y/ is open, unbounded, path-connected, not simply connected.
+
+3. (a) 00] := lim f ST The answer Oj f := iim Ler) fe) was also accepted.
+
+(b) For each fixed ¢ we have: lim,_,9 2
+must extend the function to the origin by 0. Thus we extend f to (0,0) by 0.
+Fix any direction R? ‏ק כ‎ 4 0 and the corresponding angle 0 6 ]0, 27). We should check the existence of the limit
+‏ו‎
+‎)06(( 5: ||] 0 t [lt || + cost(bs)”
+
+2 eces(2¢) — 0. Therefore, if we want to have directional derivatives, we
+
+,608)208(
+
+lim ‏שו‎ a
+190 |]
+
+If cos(@s) = 0 then the limit is zero. Otherwise the limit does not exist, as the limits for t > 0* are distinct.
+
+4. (a) (This is question 5.d from homework.3)
+The functions f1, fo are continuous therefore the subsets $1, $2 C R® are closed. As $1, 52 are also bounded these
+sets are compact. Therefore the (continuous) function d(s;,s2) on S x Sp attains its minimum. Hence the distance
+d(S,, S2) is realized for some points of $1, S2.
+(b) Suppose s1,s2 are the points realizing the minimum of the distance. Then the function / = ||₪ — so||? has the
+(absolute) minimum at the point ₪ = s1, under the restriction f(x) = 0. Thus, by Lagrange’s theorem, at this point
+holds:
+
+2(s1 — $2) = grad; (\|z — s3||*)|s. ~ grad(fi)|s.-
+
+As we have seen, grad(f,)|s, is the normal vector to the surface S$, at the point s;. Thus the vector 81 — s2 is
+orthogonal to Sj at the point s;. Similarly it is orthogonal to $ at the point s9.
+
+5. (This is based on question 1.c from homework 7.)
+To identify/classify the critical point we need only the first/second derivatives. Therefore (as in homeworks) we
+take Taylor’s expansion of f(x,y,z) up to order 2. We get: f(x,y,z) = 5 + O(a°,a27y, xy, y®). Therefore
+ytyz+e2
+‏ו‎
+
+grad(f)\(0,0,0) = 0, ie. the origin is indeed a critical point, and it is enough to classify the critical point of
+This can be done in many ways e.g.:
+> Restrict to the lines {y
+
+— f(x,a,0) = =astay = 9- This vanishes at x = 0 and is positive otherwise. Thus x = 0 is a minimum.
+— 166, -2,0( = ‏חק‎ <0. This vanishes at x = 0 and is negative otherwise. Thus ‏ש‎ = 0 is a maximum.
+
+Thus (0,0, 0) is
+
+0 1 1
+> The Hessian matrix is 0] |(0,0,0) = $ 1 0 1]. To check whether this is positive/negative definite we can use
+1 0
+1 se auth oant : - 0 1 2 , / / -
+Sylverster’s criterion. The first 2 x 2 minor is det 1 ol —1. Thus 07 f|(0,0,0) is not positive definite. Similarly,
+
+(—0 f|(0,0,0)) is not positive definite.
+Therefore 02 f|(o,0,0) is neither positive nor negative definite. Thus (0,0,0) is a saddle point.
+
+6. (This is based on q.3.v from homework 11.)
+
+The condition + > z > y implies y > 0, thus |y| = y. We pass to the iterated integral, and then to polar coordinates:
+
+= / ) | ( | -
+“1
+
+1
+
+| ( / / ye dydz)c
+
+7 o<y?4e2<a3 710 0%
+) 1 00
+1 A 1 1 1 ; 1
+‏מ)‎ — sin(arctan(5)) (= — sin(arctan(5))
+₪ 2 2 a 2
+= VR pe dy = VB et 1),
+3 3
+0
+., 06 ‏ו‎ gin? = 07 22 ‏מ‎ 5 sinlarc ly) 4
+One can also compute sin(arctan(3)), ¢.g., sin” = Sarto = ‏,דד‎ thus sin(arctan(5)) = ‏בה‎
+
+7. (This is based on question 5 from homework 14.)
+(a) By the direct check: 0,F, = 0,F,. Therefore the field is locally conservative in R? \ (0,0).
+(b) To check that the field is globally conservative we should check: $ FdG = 0 for any loop in R? \ (0,0). As was shown
+
+in homework 14, it is enough to check the vanishing of just one integral, for C = {a? + y? = R?} C R?. This follows
+also from Green’s theorem. We check the vanishing:
+
+- poe 0
+
+(y? — x?)dax — 2xydy i
+(a? + y?)?
+o24y2=R2 0
+Therefore the field is globally conservative in R? \ (0,0).
+Another solution: Once we check that 0; F, = 0,F,, we can try to find the potential. By integrating f F.dx, [ Fydy
+one readily sees that F= grad(@) for ¢(a,y) = whe +2 Note that ¢ is well defined (and infinitely differentiable) on the
+
+whole R? \ {0,0}. Thus F is conservative.
+
++ The surface is closed and the field is continuously differentiable in the whole R°. We use the Gau8 theorem (note the
+minus sign due to the inner normal):
+
+/ 708 = = / / / divF > 0000005 7-6 / / / (4a? + 8y7 + 1(020002 = —abe / / / 10260002 = 6
+/ 3
+
+1+ 1+ ריוור ו 8
+5
+

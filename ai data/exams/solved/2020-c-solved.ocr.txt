@@ -1,0 +1,146 @@
+Solutions to Moed.C, Hedva.3.EE, 16.07.2020
+
+1. As ‏ק).ק‎ x ₪( # 0 the vectors @,%, Ww are linearly independent (do not lie in one plane). Therefore their
+end-points are the vertices of a triangle, while ‏ק||‎ - ||, ||@—w|, ‏ק||‎ - || are the lengths of the sides of this
+triangle.
+
+This triangle is non-degenerate, i.e. the vertices do no lie on one line. Therefore none of || - ||, ||@— wl],
+||@ — || is the sum of two others.
+
+2. The function f(x,y, 2( is periodic in z, with the period 27. Therefore instead of considering the unbounded
+set OU C R? we can r 5 to UN {0 > ₪ > 27} C R3. This set is closed and bounded, thus compact.
+Therefore f attains its minimum/maximum on 0UN {0 > z > 27}, and hence on OU as well.
+
+As f(x,y, 2) = 9(x,y)+sin(z), the minimum of f occurs when z € —$+27Z and g(2, y) has the minimum.
+The maximum occurs when 2 6 = + 27Z and g(x,y) has the maximum. Therefore the question is reduced
+
+to min/max of g(x,y) = ₪2 + y? on the boundary of the subset 5 + 2 >1 ‏ב‎ + x <1} CR’. This is
+the intersection of two ellipses, the boundary consists of the four arcs.
+e Suppose the arc is a part of 5 + ‏ב‎ = 1. Then g on this are is: x? + b?(1— =) = - ₪
+b >a the minimum of this expression is achieved at 22 = a”, while the maximum at x = 0.
+Note that the points (0,+b) do not satisfy the condition ca + 9 > 1. The points (+a,0) do satisfy it,
+and g(+a,0) = 5.
+> Suppose the arc is a part of ca + x = 1. Then g on this arc is: ₪2 + 0201 - =) = 02 + 901 = ( As
+b >a the minimum of this expression is achieved at 22 = 0, while the maximum at 2? = b?.
+Note that the points (b,0) do not satisfy the condition 5 + 2 > 1. The points (0,+a) do satisfy it,
+and g(0, +a) = a?.
+e It remains to check the intersection points of the two ellipses: 5 + 2 = 1= 5 + a These satisfy
+
+gaya we, — 207b?
+25 = = ‏קד‎ and 006, *( = ap.
+
+5 - 1(. As
+
+neterized by x,y. These parameters vary in the region {x? + y? +2y > 2020} 6
+: {a? + (y + 1)? > 2021} ₪ R?. Therefore, for any function h holds:
+
+]*5-[]* +
+
+3. The surface is naturally ‏וכ‎
+‎R?, which is a shifted dis
+
+P+ (Fz dedy = ‏ה‎
+
+Thus
+
+Area = I 105 = I V2- dxdy = V2- (area of the disc of radius \/ 3021) => (Vv 2021).
+
+{x?-+y?+2y<2020}
+
+A. See question 3 of Moed.B, 2020.02.27.
+
+5. The integration path bounds the disc, denote it D. We apply Stokes theorem: ¢ 7 - 67 = ff )1,-1,1( - 5.
+6 D
+
+oe Therefore:
+
+By the assumption on the direction of the path, the (unit) normal to the disc is:
+
+pF > ‏ה‎ = —V2- (the area of D).
+0
+
+The diameter of D is obtained as the distance between the points (0,0,0) and )0,1,1( , which is 2.
+Therefore / 0.08 ‏)ל‎
+
+6. Note that div( G4), ) = 0. Therefore we can use Gauss theorem to replace the surface by a simpler
+(2? +y? +27)2
+one, as far as the field remains differentiable in the whole body of integration.
+8
+
+, as both the field and
+Py? +27)?
+
+Solution 1. First we note: J
+
+*) 1=*ןמן+95|+*|פן ( 595
+20
+
+the normal are anti-symmetric under | (x,y,z) @ (—a, -y, 2). Therefore
+(2) | 1 )25(
+
+‎ae 23‏ 2 2)3 שו
+‎(a? + y? + 2?)2 / +y? + (3‏ /
+‎l2P-Hyi-+eP=1‏ -*|:1-1%--5%ן
+
+‎2>0
+
+‎ds.
+
+‎To compute this later integral we would like to use Gauss theorem, but the field is not differentiable at
+
+‎0, 0, 0 . Thus we use Gauss theorem for the body: ₪ 8 8 2 3 < 1, a 2 2 > 2 . Here 0 <e< 1
+4 + + ++
+(w.y.2)
+
+‎is a (small) constant. As div(——*—, ) = 0 we have:
+(a2+y?2+22)2
+1 / ‏ב‎ 1 / 2
+= > (mz) = -dS =— = fp > (mz) = -dS, with the inner normal.
+2 (x? + y? + 22)2 2 / ‏ו‎
+‏1=>|:|+*ע|-5|פן‎ a2tyltstae
+
+‎For the later integral we note that 2? + y? + 22 = 62 along the surface, thus
+
+‎1 fp (x,y, 2) . = vl fp (x,y, 2) 4g Cus I _ : ff sav —2 -
+2 / (a? + y? + 22( 2 / 3 7
+
+‏ו + +
+
+‎Solution 2“. We would like to replace the initial surface by the planar domain {|x|* + |y|? > 1, 2 = O}.
+But this domain contains the point (0,0,0), where the field is not differentiable. Thus we replace the initial
+surface by the union:
+
+‎le? + ‏וע‎ <1, Fa 0} 2) 2 | .2_ 2
+
+‎a +4 = => O}.
+{ 2eyse U{a"? +y° + 2° =&,2 > 0}
+
+‎SS So
+1
+
+‎As div( ee) = = 0 we have by Gauss theorem:
++y2+2
+(x, y,2) ₪ ‘Le (x,y,z )- ds ‘ff (a, y, 2) - ds 20
+51+: + at + 2 1 (w+ 2)
+“220
+
+‎In the later two integrals the normals are taken downstairs.
+The normal to Sj is (0,0,—1), therefore for the integral over S; we have:
+z=0. Thus
+
+‎Ys2)° d§ = -2dS = 0, as
+
+‎x,y,2)-d5 4
+(vee) - +] 0 2 2): 8 ‏א‎ ; With the normal upstairs.
+a? + y? + 27)? a? + y? + 2°)
+
+‏1=*|ג|+*]ע|+*|פן
+‏20
+
+‎The later integral is computed in various ways, e.g.
+
+‎Pr. ldS 1 ar 5
+Ie @,Y, 2) > as -]" 5 [p> 5] 6- 8 8 done
+24 y2 + 22) re 6 ss 6 6
+Se
+
